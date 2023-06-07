@@ -138,7 +138,6 @@ button{
 }
 .img-wrapper:nth-child(2){
     margin: 0;
-    height: 120%;
 }
 .img-wrapper:nth-child(2) img{
     object-fit: cover;
