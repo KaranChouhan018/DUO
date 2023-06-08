@@ -2,7 +2,6 @@ gsap.to( 'video', {
     scrollTrigger: {
         trigger: ".div2" ,
         start: "top top" ,
-        markers:true ,
         scrub: 1.5 ,
         pin: ".div2"
     },
@@ -10,11 +9,11 @@ gsap.to( 'video', {
     Backgroundposition: '200px 0px' ,
     ease: "Expo.easeInOut"
 })
+gsap.registerPlugin(CSS),
 gsap.from( '.div3 ,.b7' ,{
     scrollTrigger: {
         trigger: ".about" ,
         scroller:"body" ,
-        markers:true ,
         start: "top top" ,
         scrub: 2 ,
         pin: ".about"
@@ -27,7 +26,6 @@ gsap.from('.work h1 , .img-wrapper' , {
     scrollTrigger: {
         trigger: ".work" ,
         start: "top top" ,
-        markers:true ,
         scrub: 1.5 ,
         pin: ".work"
     },

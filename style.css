@@ -164,4 +164,29 @@ button{
     .div2 video{
         margin-top: 14%;
     }
+    .landingpage{
+        height: 51vh;
+    }
+    .about h1{
+        font-size: 2rem;
+    }
+    .div3{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .b3{
+        font-size: 2rem;
+    }
+    .b4{
+        font-size: 1.25rem;
+    }
+    .work h1{
+        font-size: 2rem;
+    }
+    .img-wrapper:nth-child(2) img ,.img-wrapper:nth-child(4) img{
+        height: 150px;
+    }
+    .card-info{
+        flex-direction: column;
+    }
 }
