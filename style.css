@@ -7,6 +7,7 @@ body{
     width: 100%;
     height: 100%;
     cursor: url();
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -101,7 +102,7 @@ body{
     }
 }
 button{
-    padding:5px 10px;
+    padding:10px 15px;
     background-color: rgb(255, 0, 0);
     border: 2px solid black ;
     font-weight: 800;
@@ -147,6 +148,30 @@ button{
 }
 .img-wrapper:nth-child(4) img{
     object-fit: cover;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+.btn__circle {
+    width: 8.5vw;
+    min-width: 8.5vw;
+    height: 8.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: #edbfff;
+    color: #0f0d0d;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    text-decoration: none;
 }
 @media only screen and (max-width:600px){
     .div1 h1{
