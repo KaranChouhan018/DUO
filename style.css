@@ -19,6 +19,7 @@ body{
     margin-top: 1%;
     justify-content: space-between;
     font-family: 'SUD';
+    position: static;
 }
 .navbar li{
     font-weight: bolder;
@@ -123,7 +124,6 @@ body{
     width: 100%;
     height: 61vh;
     margin-top: 4%;
-    overflow-x: hidden;
 }
 #ca {
     height: 90%;
@@ -210,6 +210,9 @@ body{
     z-index: 2;
     text-align: left;
     border-bottom: 1px solid white;
+}
+.footerlinks{
+    height: 20vh;
 }
 .Container {
     margin: 2rem auto;

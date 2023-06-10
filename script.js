@@ -42,12 +42,11 @@ ScrollTrigger.refresh();
 
 gsap.to( 'video' ,{
     scrollTrigger : {
-        scroller : 'body',
         trigger:".div2",
         start:"top top",
-        end: " top -10%",
+        end:".work",
         scrub : 2,
-
+        markers:true,
         pin: ".div2"
     },
     width: "100%",
@@ -56,7 +55,7 @@ gsap.to( 'video' ,{
 gsap.from( '.img-wrapper:nth-child(1),.img-wrapper:nth-child(3)' ,{
   scrollTrigger : {
       scroller : 'body',
-      trigger:".card-container",
+      trigger:".work .b8",
       start:"top top",
       end: " top -10%",
       scrub : 2,
@@ -69,9 +68,10 @@ gsap.from( '.img-wrapper:nth-child(1),.img-wrapper:nth-child(3)' ,{
 gsap.from( '.img-wrapper:nth-child(2),.img-wrapper:nth-child(4)' ,{
   scrollTrigger : {
       scroller : 'body',
-      trigger:".card-container",
+      trigger:".work .b8",
       start:"top top",
       end: " top -10%",
+      markers:true,
       scrub : 2,
   },
   opacity:0,
@@ -88,6 +88,7 @@ gsap.fromTo('.work .b8 ',{
   duration:1,
   scrollTrigger:".work",
   start:"top top",
+  markers:true,
   scroller:".work"
 })
 gsap.fromTo('.btn__circle ',{
@@ -125,17 +126,20 @@ gsap.to("#ca", {
     },
     left: "-40%"
   })
+
   gsap.fromTo('#right ',{
     opacity:0,
     x:200,
+    markers:true
 },{
     opacity:1,
     x:0,
-    duration:1,
+    duration:.5,
     start:"top 65%",
     end:"top -10%",
     scrollTrigger:".hover"
 })
+
 gsap.fromTo('#left ',{
   opacity:0,
   x:-200,
@@ -144,10 +148,11 @@ gsap.fromTo('#left ',{
   x:0,
   duration:.5,
   start:"top 65%",
-  scrollTrigger:".hover"
+  scrollTrigger:".hover",
+  markers:true
 })
   
 gsap.from('.navbar ' , {opacity : 0 , duration: 2 , y : -50})
 gsap.from('.b1', { opacity: 0 , duration: 2 , x: 100 , delay: 1.2} )
 gsap.from('.b2', { opacity: 0 , duration: 2 , x: -50 , delay:1.4 } )
-gsap.from('.div2 ' , {opacity : 0 , duration: 2 , y : -50 , delay: 1.6})
+gsap.from('.div2 ' , {opacity : 0 , duration: 2 , y : -50 , delay: 1.6} )
