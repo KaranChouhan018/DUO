@@ -46,7 +46,6 @@ gsap.to( 'video' ,{
         start:"top top",
         end:".work",
         scrub : 2,
-        markers:true,
         pin: ".div2"
     },
     width: "100%",
@@ -71,7 +70,6 @@ gsap.from( '.img-wrapper:nth-child(2),.img-wrapper:nth-child(4)' ,{
       trigger:".work .b8",
       start:"top top",
       end: " top -10%",
-      markers:true,
       scrub : 2,
   },
   opacity:0,
@@ -88,7 +86,6 @@ gsap.fromTo('.work .b8 ',{
   duration:1,
   scrollTrigger:".work",
   start:"top top",
-  markers:true,
   scroller:".work"
 })
 gsap.fromTo('.btn__circle ',{
